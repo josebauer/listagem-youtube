@@ -1,0 +1,102 @@
+@import url(./reset.css);
+
+body {
+  display: grid;
+  height: 100vh;
+
+
+  grid-template: 
+  "header header header header" 56px 
+  "sidebar main main main" 
+  "sidebar main main main" 
+  / 0.8fr 2fr 2fr 2fr;
+}
+
+header {
+  background: #FFFFFF;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  gap: 32px;
+
+  grid-area: header;
+}
+
+main {
+  background: #F9F9F9;
+  grid-area: main;
+}
+
+aside {
+  background: #FFFFFF;
+  grid-area: sidebar;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  width: 146px;
+  height: 24px;
+}
+
+.lateral-menu img{
+  width: 24px;
+  height: 24px;
+  margin-right: 32px;
+}
+
+.logo img {
+  width: 90px;
+  height: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #CCCCCC;
+  width: 404px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.rectangle {
+  box-sizing: border-box;
+  
+  width: 57px;
+  height: 40px;
+
+  border-left: 1px solid #CCCCCC;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: url(/assets/images/search.png) center no-repeat #F8F8F8;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+
+  width: 130px;
+  height: 34px;
+}
+
+.video img{
+  width: 24px;
+  height: 24px;
+}
+
+.bell img{
+  width: 24px;
+  height: 24px;
+}
+
+.profile img{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
