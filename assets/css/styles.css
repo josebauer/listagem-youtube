@@ -9,7 +9,7 @@ body {
   "header header header header" 56px 
   "sidebar main main main" 
   "sidebar main main main" 
-  / 0.8fr 2fr 2fr 2fr;
+  / 0.9fr 2fr 2fr 2fr;
 }
 
 header {
@@ -32,6 +32,11 @@ main {
 aside {
   background: #FFFFFF;
   grid-area: sidebar;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 22px;
 }
 
 .left {
@@ -100,3 +105,19 @@ aside {
   border-radius: 50%;
 }
 
+.home {
+  font-weight: 700;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.item img {
+  width: 24px;
+  height: 24px;
+}
