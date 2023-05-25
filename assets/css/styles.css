@@ -27,6 +27,12 @@ header {
 main {
   background: #F9F9F9;
   grid-area: main;
+
+  display: grid;
+  row-gap: 45px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  padding: 20px;
+  justify-content: space-between;
 }
 
 aside {
@@ -89,7 +95,7 @@ aside {
   height: 34px;
 }
 
-.video img{
+.upload img{
   width: 24px;
   height: 24px;
 }
@@ -103,6 +109,49 @@ aside {
   width: 34px;
   height: 34px;
   border-radius: 50%;
+}
+
+.video img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 10px;
+  gap: 10px;
+  
+  width: 249px;
+  height: 74px;
+}
+
+.infos img {
+  width: 42px;
+  height: 42px;
+}
+
+.title-description {
+  padding-left: 10px;
+}
+
+.title-description h3 {
+  width: 220px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-bottom: 10px;
+}
+
+.title-description p {
+  color: #515151;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  padding-top: 15px;
 }
 
 .home {
